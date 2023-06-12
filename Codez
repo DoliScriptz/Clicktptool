@@ -1,0 +1,1 @@
+local LocalPlayer = game.Players.LocalPlayer local rp = LocalPlayer.Character.HumanoidRootPart local tool = Instance.new("Tool",LocalPlayer.Backpack) local mouse = LocalPlayer:GetMouse() tool.Name = "click tp" tool.RequiresHandle = false tool.Activated:Connect(function()      rp.CFrame = CFrame.new(mouse.Hit.X,mouse.Hit.Y + 4,mouse.Hit.Z) end) 
